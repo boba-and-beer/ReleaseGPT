@@ -92,7 +92,7 @@ release_notes_dict = {"new_features": [], "bug_fixes": [], "improvements": []}
 for chunk in tqdm(chunk_string(diff_output_str, 3000)):
     small_release = talk(f"""
 You are an expert at communicating between git diffs and translating that to users.
-Can you generate human-readable release notes for our users based on the git diff and add a random emoji on each line?
+Can you generate human-readable release notes for our users based on the git diff.
 Ignore any updates to a package as they are not user-facing. 
 
 ```
